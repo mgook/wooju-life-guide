@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172554">
+  <meta name="description" content="우주의 수면·행동·식사 상황을 사례별로 찾아보는 가족 생활 가이드">
+  <title>우주 생활 가이드</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav wrap"><a href="#top" class="brand">우주 생활 가이드</a><a href="#principles">기본 방향</a></nav>
+    <div class="wrap hero-copy" id="top">
+      <p class="eyebrow">우리 가족의 관찰과 대응 기록</p>
+      <h1>흔들릴 때 다시 보는<br>우주의 생활 지도</h1>
+      <p>수면, 행동, 식사 상황을 빠르게 찾고 부모의 대응을 일관되게 맞추기 위한 기록입니다.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="principles" class="principles" aria-labelledby="principles-title">
+      <div><p class="section-label">기본 방향</p><h2 id="principles-title">감정은 받아주고,<br>경계는 차분하게 지켜요.</h2></div>
+      <div class="principle-grid">
+        <article><span>01</span><h3>상태를 먼저 구분하기</h3><p>완전히 깬 낮의 요구인지, 잠결의 부분 각성인지 먼저 봅니다.</p></article>
+        <article><span>02</span><h3>감정과 요구 나누기</h3><p>속상함은 받아주되 모든 요구를 들어줄 필요는 없습니다.</p></article>
+        <article><span>03</span><h3>안전과 회복 우선</h3><p>위험 신호가 있거나 부모가 소진될 때는 원칙보다 안전과 휴식을 앞세웁니다.</p></article>
+        <article><span>04</span><h3>한 번보다 패턴 보기</h3><p>시각, 지속시간, 전후 상황과 결과를 기록해 반복되는 흐름을 찾습니다.</p></article>
+      </div>
+    </section>
+
+    <section class="case-section" aria-labelledby="case-title">
+      <p class="section-label">상황별 가이드</p>
+      <div class="section-head"><h2 id="case-title">지금 필요한 사례 찾기</h2><span id="resultCount" aria-live="polite"></span></div>
+      <label class="search"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="예: 5시, 엄마, 젓가락, 싱크대" autocomplete="off"></label>
+      <div id="filters" class="filters" aria-label="카테고리 필터"></div>
+      <div id="caseGrid" class="case-grid"></div>
+      <p id="emptyState" class="empty" hidden>조건에 맞는 사례가 없습니다.</p>
+    </section>
+
+    <section class="notice">
+      <h2>이 기록을 사용하는 법</h2>
+      <p>각 사례는 정답이 아니라 우리 가족이 같은 방향으로 대응하기 위한 출발점입니다. 아이의 반응과 부모의 여건에 맞춰 조정하고, 호흡 이상·입술색 변화·몸이 뻣뻣해짐·반복적인 경련·깨운 뒤 이상 반응 등 급한 신호가 있으면 생활 가이드보다 의료진의 평가를 우선합니다.</p>
+    </section>
+  </main>
+
+  <footer><div class="wrap"><p>우주 생활 가이드</p><p>관찰하고, 기록하고, 함께 조정하기</p></div></footer>
+
+  <dialog id="caseDialog"><button class="close" aria-label="닫기">×</button><div id="dialogContent"></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
